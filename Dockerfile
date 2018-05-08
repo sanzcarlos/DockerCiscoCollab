@@ -12,7 +12,7 @@ LABEL org.label-schema.vendor = "Personal" \
 RUN apk update && \
     apk upgrade && \
     apk add git && \
-    git clone https://github.com/sanzcarlos/CiscoCollab /usr/src/ && \
+    git clone https://github.com/sanzcarlos/CiscoCollab /usr/src/CiscoCollab/ && \
     pip install -r /usr/src/CiscoCollab/requirements.txt
 
 WORKDIR /usr/src/CiscoCollab/

@@ -14,5 +14,7 @@ RUN apk update && \
     apk add git && \
     git clone https://github.com/sanzcarlos/CiscoCollab /usr/src/ && \
     pip install -r /usr/src/CiscoCollab/requirements.txt
-    
+
+WORKDIR /usr/src/CiscoCollab/
+
 CMD [ "python", "/usr/src/CiscoCollab/axl_cucm.py" ]

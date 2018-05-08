@@ -17,4 +17,4 @@ RUN apk update && \
     pip install -r /usr/src/CiscoCollab/requirements.txt && \
     cd /usr/src/CiscoCollab
     
-CMD [ "python", "/usr/src/CiscoCollab/axl_cucm.py" ]
+CMD [ "cd /usr/src/CiscoCollab/ && python axl_cucm.py" ]
